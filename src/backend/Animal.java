@@ -1,6 +1,5 @@
 package backend;
 
-
 public class Animal {
     private Integer id;
     private char tipo;
@@ -8,21 +7,11 @@ public class Animal {
     private Integer idade;
     private String nome;
 
-
-    public Animal(char tipo, Integer id, String raca, Integer idade, String nome) {
-        this.tipo = tipo;
+    public Animal(char tipo, String raca, Integer idade, String nome) {
         this.id = id;
         this.raca = raca;
         this.idade = idade;
         this.nome = nome;
-    }
-
-    public char getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(char tipo) {
-        this.tipo = tipo;
     }
 
     public String getNome() {

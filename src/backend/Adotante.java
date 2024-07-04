@@ -2,8 +2,8 @@ package backend;
 
 public class Adotante extends Pessoa {
 
-    public Adotante(String nome, Integer id, String cpf, String endereco, String email, Long telefone){
-        super(nome, id, cpf, endereco, email, telefone);
+    public Adotante(String nome, String cpf, String endereco, String email, String telefone) {
+        super(nome, cpf, endereco, email, telefone);
     }
 
     @Override
@@ -22,7 +22,7 @@ public class Adotante extends Pessoa {
     }
 
     @Override
-    public Long  getTelefone() {
+    public String getTelefone() {
         return super.getTelefone();
     }
 
@@ -30,6 +30,4 @@ public class Adotante extends Pessoa {
     public String getEmail() {
         return super.getEmail();
     }
-
-
 }

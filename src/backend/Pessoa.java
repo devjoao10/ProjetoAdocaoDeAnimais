@@ -1,29 +1,19 @@
 package backend;
 
 public abstract class Pessoa {
-    private Integer id;
+    private int id;
     private String nome;
     private String cpf;
     private String endereco;
     private String email;
-    private Long telefone;
+    private String telefone;
 
-
-    public Pessoa(String nome, Integer id, String cpf, String endereco, String email, Long telefone) {
-        this.id = id;
+    public Pessoa(String nome, String cpf, String endereco, String email, String telefone) {
         this.nome = nome;
         this.cpf = cpf;
         this.endereco = endereco;
         this.email = email;
         this.telefone = telefone;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public String getNome() {
@@ -50,11 +40,11 @@ public abstract class Pessoa {
         this.endereco = endereco;
     }
 
-    public Long  getTelefone() {
+    public String  getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(Long  telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
@@ -66,4 +56,3 @@ public abstract class Pessoa {
         this.email = email;
     }
 }
-
